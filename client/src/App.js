@@ -1,7 +1,23 @@
 import "./App.css";
+import SyllabusUploader from "./components/SyllabusUploader.js"
+import MyButton from "./components/button.js"
+
 
 const App = () => {
-    return <div>My App</div>;
+
+  const handleClick = ()=>{
+    alert("Button clicked!");
+  }
+
+  return (
+  
+  <div>
+      <h1>Syllabus Ai</h1>
+      <h2>upload syllabus:</h2>
+      <MyButton text="click me" onClick={handleClick}/>
+  </div>
+
+  );
 }
 
 export default App;
