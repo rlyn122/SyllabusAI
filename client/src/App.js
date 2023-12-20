@@ -15,6 +15,8 @@ const App = () => {
       <h1>Syllabus Ai</h1>
       <h2>upload syllabus:</h2>
       <MyButton text="click me" onClick={handleClick}/>
+      <MyButton text="quack quack" onClick={handleClick}/>
+      <MyButton text="moo moo" onClick={handleClick}/>
   </div>
 
   );
