@@ -1,20 +1,25 @@
 import React from 'react';
-import {Router, Routes, Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
-import CreateBook from './pages/CreateBook'
-import NavigationBar from './components/navbar';
-import UploadSyllabus from './components/uploadsyllabus';
+import About from './pages/About'
+import Start from './pages/Start'
+import Upload from './pages/Upload';
 
+
+import NavigationBar from './components/navbar';
+import './components/styles.css'
 const App = () => {
   return (
-    <Router>
+    <div>
       <NavigationBar />
       <Routes>
-        <Route path="/upload" element={<UploadSyllabus />} />
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/books/create' element={<CreateBook />}></Route>
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/start" element={<Start />} />
+
       </Routes>
-    </Router>
+      </div>
   )
   }
 export default App;
