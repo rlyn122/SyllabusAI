@@ -4,13 +4,10 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Start from './pages/Start'
 import Upload from './pages/Upload';
-
-
 import NavigationBar from './components/navbar';
-import './components/styles.css'
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <NavigationBar />
       <Routes>
         <Route path="/upload" element={<Upload />} />

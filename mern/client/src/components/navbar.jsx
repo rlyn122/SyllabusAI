@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const NavigationBar = () => {
     return (
         <Navbar style={{ backgroundColor: '#343a40' }} variant="dark" expand="lg">
-        <Navbar.Brand href="/">SyllabusAI</Navbar.Brand>
+        <Navbar.Brand href="/">SyllaBuddyAI</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">

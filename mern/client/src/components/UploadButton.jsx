@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './styles.css';
+import './css/upload.modules.css';
 
 const UploadSyllabus = () => {
     const [file, setFile] = useState(null);
