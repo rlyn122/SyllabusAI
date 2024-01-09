@@ -7,14 +7,14 @@ import UploadSyllabus from './components/uploadsyllabus';
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <NavigationBar />
       <Routes>
         <Route path="/upload" element={<UploadSyllabus />} />
         <Route path='/' element={<Home />}></Route>
         <Route path='/books/create' element={<CreateBook />}></Route>
       </Routes>
-    </Router>
+      </div>
   )
   }
 export default App;
