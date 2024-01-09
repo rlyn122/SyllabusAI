@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-  font-family: 'Roboto', sans-serif; /* Roboto is a modern, clean font */
+.main-content {
+    padding-top:30px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif; /* Roboto is a modern, clean font */
 }
 
 .main-content h1 {
@@ -24,6 +26,8 @@ body {
 .main-content p {
   color: #343a40; /* Dark gray for the paragraph */
   margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
   font-size: 16px; /* Standard size for paragraph text */
   line-height: 1.6; /* Optimized for readability */
   font-weight: 400; /* Regular font weight for paragraph */
