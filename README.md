@@ -1,1 +1,1 @@
-# StudyBot
+# SyllabusAI

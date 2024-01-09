@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Reset some basic elements */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+  }
+  
+  /* Apply a font throughout the website */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fcfbf2; /* Light blue background similar to the mockup */
+    color: #333; /* Dark grey text for readability */
+  }

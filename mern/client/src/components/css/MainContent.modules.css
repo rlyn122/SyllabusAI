@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.main-content {
+    padding-top:30px;
+    text-align:center;
+    font-family: 'Roboto', sans-serif; /* Roboto is a modern, clean font */
+}
+
+.main-content h1 {
+  color: #007bff; /* Primary blue color for headings */
+  margin-bottom: 10px;
+  font-size: 50px; /* Large font size for headings */
+  font-weight: 700; /* Makes the font bold */
+  line-height: 1.2; /* Adjust line spacing to ensure readability */
+  letter-spacing: 1px; /* Adjust letter spacing for aesthetics */
+}
+
+.main-content h2 {
+    color: #343a40; /* Dark gray for the paragraph */
+    margin-bottom: 20px;
+    font-size: 30px; /* Standard size for paragraph text */
+    line-height: 1.6; /* Optimized for readability */
+    font-weight: 400; /* Regular font weight for paragraph */
+  }
+
+.main-content p {
+  color: #343a40; /* Dark gray for the paragraph */
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 16px; /* Standard size for paragraph text */
+  line-height: 1.6; /* Optimized for readability */
+  font-weight: 400; /* Regular font weight for paragraph */
+}

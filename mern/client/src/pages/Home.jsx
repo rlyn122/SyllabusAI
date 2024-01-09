@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import axios from 'axios'
-import Spinner from '../components/Spinner'
-
+import MainContent from '../components/MainContent.jsx'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <MainContent text="AI Syllabus Assistant" subtext="Unlock a smarter way to navigate your semester."/>
+    </div>
   )
 }
 
