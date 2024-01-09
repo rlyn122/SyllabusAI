@@ -12,22 +12,26 @@ const UploadSyllabus = () => {
     const onFileUpload = () => {
         const formData = new FormData();
         formData.append('file', file);
-    
-        axios.post('http://localhost:5000/api/uploads', formData)
+        
+        try{
+        axios.post('http://localhost:3000/api/upload', formData)
           .then(response => {
             console.log("Upload successful: ", response.data);
           })
           .catch(error => {
             console.error("Error uploading file: ", error);
           });
+        }catch(error){
+            console.log(error)
+        }
     };
 
     return (
         <div className="upload-container">
+            <input type="file" accept=".pdf" id="fileInput" onChange={onFileChange} />
+            <label htmlFor="fileInput"></label>
             <div className="upload-button">
-                <input type="file" id="fileInput" onChange={onFileChange} />
-                <label htmlFor="fileInput"></label>
-                <button onClick={onFileUpload}>Upload Syllabus</button>
+                <button type="button" onClick={onFileUpload}>Upload Syllabus</button>
             </div>
         </div>
     );

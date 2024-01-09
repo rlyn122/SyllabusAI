@@ -2,6 +2,8 @@ import express from "express";
 import {PORT, URL} from "./config.js";
 import mongoose from "mongoose"
 import booksRoute from './routes/booksRoute.js';
+import syllabusRoute from './routes/syllabusRoute.js';
+import cors from 'cors';
 
 const app = express();
 
@@ -19,6 +21,7 @@ app.get('/', (request, response) => {
     return response.status(234).send('Hello World!');
   });
 
+app.use('/api', syllabusRoute)
 app.use('/books', booksRoute);
 
 
